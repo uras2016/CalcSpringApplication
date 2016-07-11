@@ -9,12 +9,12 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../Calculator/target/CalculatorLib-1.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/.idea/libraries/Calculator-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
