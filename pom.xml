@@ -24,10 +24,33 @@
             <configuration>
                 <archive>
                     <manifest>
-                        <mainClass>Runner</mainClass>
+                        <mainClass>Bootstrap</mainClass>
                     </manifest>
                 </archive>
             </configuration>
+        </plugin>
+
+        <plugin>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <configuration>
+                <archive>
+                    <manifest>
+                        <mainClass>Runner</mainClass>
+                    </manifest>
+                </archive>
+                <descriptorRefs>
+                    <descriptorRef>jar-with-dependencies</descriptorRef>
+                </descriptorRefs>
+            </configuration>
+
+            <executions>
+                <execution>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>single</goal>
+                    </goals>
+                </execution>
+            </executions>
         </plugin>
 
     </plugins>
@@ -40,12 +63,20 @@
             <version>4.11</version>
             <scope>test</scope>
         </dependency>
+
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>4.2.5.RELEASE</version>
+        </dependency>
+
+
         <dependency>
             <groupId>ua.goit.java</groupId>
             <artifactId>Calculator</artifactId>
-            <version>1.0</version>
+            <version>1.1</version>
         </dependency>
-
 
     </dependencies>
 

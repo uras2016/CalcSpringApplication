@@ -1,6 +1,6 @@
 public class Runner {
 
-    public static void main(String[] args) {
+    public void execute() {
 
         Calculator calculator = new Calculator();;
         Provider provider = new Provider();
@@ -8,7 +8,7 @@ public class Runner {
 
         String expressionToCalculate;
 
-        expressionToCalculate = Console.readString("Введіть, будь ласка, вираз.");
+        expressionToCalculate = Console.readString("Please enter your expression:");
 
         provider.init();
         calculator.setOperationsSet(provider.getOperations());
