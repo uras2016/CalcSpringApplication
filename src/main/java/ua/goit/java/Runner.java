@@ -8,6 +8,31 @@ public class Runner {
     private Dividing dividing;
     private Multiplying multiplying;
 
+    public void execute() {
+
+        String expressionToCalculate;
+
+        boolean quit = false;
+        while (!quit) {
+
+            while (true) {
+
+                expressionToCalculate = Console.readString("Please enter your expression to calculate:");
+
+                provider.init();
+                provider.initAdditionalOperation(dividing);
+                provider.initAdditionalOperation(multiplying);
+                calculator.setOperationsSet(provider.getAllOperations());
+                calculator.setParser(parsedExpression);
+                System.out.println(expressionToCalculate + "=" + calculator.calculate(expressionToCalculate));
+
+                if (Console.readString("\n - In order to calculate one more expression press  \"Enter\". \n - For Exit press \"q\" and press \"Enter\" ").equals("q"))
+                    quit = true;
+                break;
+            }
+        }
+    }
+
     public void setProvider(Provider provider) {
         this.provider = provider;
     }
@@ -26,20 +51,5 @@ public class Runner {
 
     public void setMultiplying(Multiplying multiplying) {
         this.multiplying = multiplying;
-    }
-
-    public void execute() {
-
-        String expressionToCalculate;
-
-        expressionToCalculate = Console.readString("Please enter your expression:");
-
-        provider.init();
-        provider.initAdditionalOperation(dividing);
-        provider.initAdditionalOperation(multiplying);
-        calculator.setOperationsSet(provider.getAllOperations());
-        calculator.setParser(parsedExpression);
-        System.out.println(expressionToCalculate + "=" + calculator.calculate(expressionToCalculate));
-
     }
 }

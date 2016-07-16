@@ -12,4 +12,6 @@ public class Console {
         String result = consoleReader.nextLine();
         return result;
     }
+
+
 }
