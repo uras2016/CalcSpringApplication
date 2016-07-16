@@ -1,3 +1,5 @@
+package ua.goit.java;
+
 import java.util.Scanner;
 
 public class Console {

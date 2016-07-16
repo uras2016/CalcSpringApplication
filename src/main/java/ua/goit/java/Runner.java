@@ -1,8 +1,10 @@
+package ua.goit.java;
+
 public class Runner {
 
     public void execute() {
 
-        Calculator calculator = new Calculator();;
+        Calculator calculator = new Calculator();
         Provider provider = new Provider();
         Parser parser = new ParsedExpression();
 

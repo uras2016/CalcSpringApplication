@@ -1,3 +1,5 @@
+package ua.goit.java;
+
 import java.math.BigDecimal;
 
 public class Dividing implements Operation {
