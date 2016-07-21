@@ -11,10 +11,11 @@
         <property name="multiplying" ref="multiplying"/>
     </bean>
     <bean id="provider" class="ua.goit.java.Provider" init-method="init"/>
-    <bean id="calculator" class="ua.goit.java.Calculator"/>
+    <bean id="calculator" class="ua.goit.java.Calculator" scope="prototype"/>
     <bean id="parsedExpression" class="ua.goit.java.ParsedExpression"/>
     <bean id="dividing" class="ua.goit.java.Dividing"/>
     <bean id="multiplying" class="ua.goit.java.Multiplying"/>
+
 
 
 </beans>
