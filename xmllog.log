@@ -1,0 +1,5 @@
+2016-07-21 23:41:00 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Jul 21 23:41:00 EEST 2016]; root of context hierarchy
+2016-07-21 23:41:01 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [application-context.xml]
+2016-07-21 23:41:01 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [aop-context-withAnotations.xml]
+2016-07-21 23:41:01 INFO  Runner:16 - Log4j. Start logging with Log4j method:ua.goit.java.Runner
+2016-07-21 23:41:14 INFO  Runner:39 - Log4j. Stщз logging with Log4j method:ua.goit.java.Runner

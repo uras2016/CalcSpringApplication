@@ -1,6 +1,10 @@
 package ua.goit.java;
 
+import org.apache.log4j.Logger;
+
 public class Runner {
+
+    private static Logger log = Logger.getLogger(Runner.class);
 
     private Provider provider; // создаем поле для инжекта в контейнер
     private Calculator calculator;
@@ -9,7 +13,7 @@ public class Runner {
     private Multiplying multiplying;
 
     public void execute() {
-
+        log.info("Log4j. Start logging with Log4j method:" + log.getName());
         String expressionToCalculate;
 
         boolean quit = false;
@@ -31,6 +35,9 @@ public class Runner {
                 break;
             }
         }
+
+        log.info("Log4j. Stщз logging with Log4j method:" + log.getName());
+
     }
 
     public void setProvider(Provider provider) {
