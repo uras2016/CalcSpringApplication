@@ -24,6 +24,8 @@ public class Runner {
                 expressionToCalculate = Console.readString("Please enter your expression to calculate:");
 
                 provider.init();
+                log.info("Run init method");
+
                 provider.initAdditionalOperation(dividing);
                 provider.initAdditionalOperation(multiplying);
                 calculator.setOperationsSet(provider.getAllOperations());
@@ -42,21 +44,31 @@ public class Runner {
 
     public void setProvider(Provider provider) {
         this.provider = provider;
+        log.info("Run " + provider.getClass());
+
     }
 
     public void setCalculator(Calculator calculator) {
         this.calculator = calculator;
+        log.info("Run " + calculator.getClass());
+
     }
 
     public void setParsedExpression(ParsedExpression parsedExpression) {
         this.parsedExpression = parsedExpression;
+        log.info("Run " + parsedExpression.getClass());
+
     }
 
     public void setDividing(Dividing dividing) {
         this.dividing = dividing;
+        log.info("Run " + dividing.getClass());
+
     }
 
     public void setMultiplying(Multiplying multiplying) {
         this.multiplying = multiplying;
+        log.info("Run " + multiplying.getClass());
+
     }
 }
